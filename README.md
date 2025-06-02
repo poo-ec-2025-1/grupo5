@@ -89,9 +89,9 @@ Nesta fase, foi elaborada uma modelagem inicial usando diagramas UML:
 Todos os diagramas estão disponíveis na pasta (-nome da pasta-).
 
 # Ambiente e ferramentas 
--**Git/GitHub**: versionamento de código e organização de tarefas
--**BlueJ**: ambiente de desenvolvimento em Java
--**Markdown**: documentação clara e legível
+-**Git/GitHub**: versionamento de código e organização de tarefas/
+-**BlueJ**: ambiente de desenvolvimento em Java/
+-**Markdown**: documentação clara e legível/
 -**UML(PlantUML)**: criação de diagramas
 
 # Síntese do Trabalho Realizado
