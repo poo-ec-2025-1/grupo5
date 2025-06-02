@@ -81,9 +81,9 @@ Marketplace de plantas, com jutificativa de que um de nossos membro teve dificul
 - As tarefas foram divididas nesse formato, mas os participantes têm total liberdade para colaborar entre si em quaisquer tarefas, independentemente de serem as suas designadas.
   
 # Modelagem inicial
-Nesta fase, foi elaborada uma modelagem inicial usando diagramas UML:
--Diagrama de classes(estrutura do sistema)
--Diagrama de casos de Uso(funcionalidades previstas)
+Nesta fase, foi elaborada uma modelagem inicial usando diagramas UML:\
+-Diagrama de classes(estrutura do sistema)\
+-Diagrama de casos de Uso(funcionalidades previstas)\
 -diagramas de Sequência(fluxo de ações)
 
 Todos os diagramas estão disponíveis na pasta (-nome da pasta-).
