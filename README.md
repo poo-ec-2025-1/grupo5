@@ -12,10 +12,10 @@ Marketplace de plantas, com jutificativa de que um de nossos membro teve dificul
 
 ## plano
 
-#Dos Objetivos Gerais:
+# Dos Objetivos Gerais:
  Criar uma plataforma voltada a comunidade jardineira e/ou florista, para auxiliar a prática da horticultura, através do comércio de produtos para cultivo e fornecimento de informações para o enriquecimento dessa experiência, complementando o comércio por outros agentes além do próprio administrador da plataforma.
 
-#Dos Objetivos especificos:
+# Dos Objetivos especificos:
  * Obter informações a fim de criar contas para identificação de usuários.
  * Criar um espaço para vendas de recursos para o plantio.
  * Possibilitar que outros usuários da plataforma possam cadastrar lojas e vender produtos voltados à horticultura.
