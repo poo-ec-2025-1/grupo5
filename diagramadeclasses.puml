@@ -1,0 +1,92 @@
+@startuml
+title Diagrama de Classes – Marketplace de Plantas
+
+left to right direction
+
+' ==== Bloco 1: Usuários ====
+package "Usuários" {
+    class Usuario {
+        - id: int
+        - nome: String
+        - email: String
+        - senha: String
+        + login(): bool
+    }
+
+    class Comprador {
+        + visualizarProdutos(): void
+        + finalizarCompra(): Pedido
+    }
+
+    class Anunciante {
+        + cadastrarProduto(p: Produto): void
+        + gerenciarAnuncios(): void
+    }
+
+    Usuario <|-- Comprador
+    Usuario <|-- Anunciante
+}
+
+' ==== Bloco 2: Produtos ====
+package "Produtos" {
+    class Produto {
+        - id: int
+        - nome: String
+        - preco: float
+        - descricao: String
+        + alterarPreco(novoPreco: float): void
+    }
+
+    class Categoria {
+        - id: int
+        - nome: String
+    }
+
+    Categoria "1" o-- "*" Produto : produtos
+    Anunciante "1" --> "*" Produto : anuncia
+}
+
+' ==== Bloco 3: Carrinho e Pedido ====
+package "Compras" {
+    class Carrinho {
+        - id: int
+        + adicionarItem(p: Produto): void
+        + removerItem(p: Produto): void
+        + calcularTotal(): float
+    }
+
+    class ItemCarrinho {
+        - quantidade: int
+        - subtotal: float
+    }
+
+    class Pedido {
+        - id: int
+        - status: String
+        + confirmar(): void
+    }
+
+    class ItemPedido {
+        - quantidade: int
+        - precoUnitario: float
+    }
+
+    Carrinho "1" *-- "*" ItemCarrinho : itens
+    Pedido "1" *-- "*" ItemPedido : itens
+    Comprador "1" --> "1" Carrinho
+    Pedido "*" --> "1" Comprador
+}
+
+' ==== Bloco 4: Pagamento ====
+package "Pagamento" {
+    class Pagamento {
+        - id: int
+        - valor: float
+        - metodo: String
+        + processar(): bool
+    }
+
+    Pagamento "1" --> "1" Pedido
+}
+
+@enduml
