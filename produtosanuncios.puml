@@ -1,0 +1,30 @@
+@startuml
+title Diagrama de Sequência – Cadastrar e Gerenciar Produtos / Anúncios
+
+actor Anunciante
+participant Sistema
+participant BancoDeDados
+
+' ==== Login ====
+Anunciante -> Sistema : login(email, senha)
+Sistema --> Anunciante : confirmação de login
+
+' ==== Cadastrar Produto ====
+Anunciante -> Sistema : cadastrarProduto(dadosProduto)
+Sistema -> BancoDeDados : salvarProduto(dadosProduto)
+BancoDeDados --> Sistema : produtoSalvo
+Sistema --> Anunciante : confirmação de cadastro
+
+' ==== Gerenciar Meus Produtos ====
+Anunciante -> Sistema : listarMeusProdutos()
+Sistema -> BancoDeDados : buscarProdutosPorAnunciante(idAnunciante)
+BancoDeDados --> Sistema : listaProdutos
+Sistema --> Anunciante : exibirProdutos()
+
+' ==== Gerenciar Anúncios ====
+Anunciante -> Sistema : atualizarStatusAnuncio(idProduto, novoStatus)
+Sistema -> BancoDeDados : atualizarStatus(idProduto, novoStatus)
+BancoDeDados --> Sistema : statusAtualizado
+Sistema --> Anunciante : confirmação de atualização
+
+@enduml
