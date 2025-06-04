@@ -1,5 +1,5 @@
 # grupo5
-# Projeto(nome do projeto)
+# Projeto(nome a definir)
 
 ## Membros e funções
 Eik Ericson de Oliveira Filho (líder)\
@@ -8,7 +8,7 @@ Letícia Barbosa (documentador)\
 Rodrigo Frota (back-end)
 
 # Introdução
-Marketplace de plantas, com jutificativa de que um de nossos membro teve dificuldade de conseguir instrução e insumos para cuidar de suas plantas, fazendo com que elas morrescem.\
+Marketplace de plantas, com jutificativa de que um de nossos membros teve dificuldade de conseguir instrução e insumos para cuidar de suas plantas, fazendo com que elas morrescem.\
  Isso fez com que tivessemos a ideia de criar esse espaço para que esse problema possa ser solucionado e outras pessoas não tenham o mesmo empecilho.
 
 # Plano
