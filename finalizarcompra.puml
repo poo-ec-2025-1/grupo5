@@ -1,0 +1,25 @@
+@startuml
+actor Comprador
+participant Sistema
+participant BancoDeDados
+participant Pagamento
+
+Comprador -> Sistema : login(usuário, senha)
+Sistema --> Comprador : confirmação de login
+
+Comprador -> Sistema : solicitarCarrinho()
+Sistema -> BancoDeDados : buscarCarrinho(idComprador)
+BancoDeDados --> Sistema : dados do carrinho
+Sistema --> Comprador : exibir carrinho
+
+Comprador -> Sistema : finalizarCompra(idCarrinho)
+Sistema -> BancoDeDados : buscarDetalhesCompra(idCarrinho)
+BancoDeDados --> Sistema : detalhes do pedido
+
+Sistema -> Pagamento : processarPagamento(dadosPagamento)
+Pagamento --> Sistema : pagamento aprovado
+
+Sistema -> BancoDeDados : registrarPedido(idComprador, produtos)
+BancoDeDados --> Sistema : pedido registrado
+Sistema --> Comprador : compra finalizada com sucesso
+@enduml
