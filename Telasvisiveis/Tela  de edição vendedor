@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="640" prefWidth="360" style="-fx-background-color: #dff1d0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane prefHeight="641.0" prefWidth="363.0">
+         <content>
+            <VBox prefHeight="684.0" prefWidth="360.0">
+               <children>
+                  <VBox prefHeight="191.0" prefWidth="254.0" style="-fx-background-color: #dff1d0;">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="131.0" style="-fx-font-size: 18;" text="Razao Social:" />
+                        <TextField id="editarRazaoSocial" opacity="0.5" prefHeight="25.0" prefWidth="176.0" promptText="Razao social..." />
+                        <Label prefHeight="30.0" prefWidth="142.0" style="-fx-font-size: 18;" text="Nome Fantasia:" />
+                        <TextField id="editarNomefantasia" opacity="0.5" prefHeight="25.0" prefWidth="176.0" promptText="Nome..." />
+                        <Label style="-fx-font-size: 18;" text="CNPJ:" />
+                        <TextField id="editarCNPJ" opacity="0.5" prefHeight="25.0" prefWidth="248.0" promptText="CNPJ..." />
+                        <Separator layoutX="5.0" layoutY="5.0" prefWidth="320">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Separator>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="236.0" prefWidth="360.0" spacing="10.0" style="-fx-background-color: #dff1d0;">
+                     <children>
+                        <Label style="-fx-font-size: 18;" text="Email:" />
+                        <TextField id="editarEmailjuridico" opacity="0.5" prefHeight="25.0" prefWidth="212.0" promptText="Email..." />
+                        <Label prefHeight="30.0" prefWidth="100.0" style="-fx-font-size: 18;" text="Endereço:" />
+                        <TextField id="editarEnderecojuridico" opacity="0.5" prefHeight="25.0" prefWidth="212.0" promptText="Endereço..." />
+                        <Label style="-fx-font-size: 18;" text="CPF Representante:">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField id="editarCPFrepresentante" opacity="0.5" prefHeight="25.0" prefWidth="212.0" promptText="CPF Do Representante..." />
+                        <Label style="-fx-font-size: 18;" text="Telefone:" />
+                        <TextField id="editarTelefonejuridico" opacity="0.5" prefHeight="25.0" prefWidth="212.0" promptText="Telefone..." />
+                        <Separator layoutX="5.0" prefWidth="320" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="183.0" prefWidth="320.0" style="-fx-background-color: #dff1d0;">
+                     <children>
+                        <Label style="-fx-font-size: 18;" text="Banco:">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField id="editarBanco" opacity="0.5" prefHeight="25.0" prefWidth="176.0" promptText="Banco..." />
+                        <Label style="-fx-font-size: 18;" text="Agencia:">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField id="editarAgencia" opacity="0.5" prefHeight="25.0" prefWidth="176.0" promptText="Agencia..." />
+                        <Label style="-fx-font-size: 18;" text="Numero da conta:">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField id="editarNumerodaconta" opacity="0.5" prefHeight="25.0" prefWidth="176.0" promptText="Numero da conta..." />
+                        <Label style="-fx-font-size: 18;" text="Titular:">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField id="editarTitular" opacity="0.5" prefHeight="25.0" prefWidth="176.0" promptText="Titular..." />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
