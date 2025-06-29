@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<AnchorPane prefHeight="640" prefWidth="360" style="-fx-background-color:  #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="640" prefWidth="360" style="-fx-background-color: #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ScrollPane prefHeight="641.0" prefWidth="363.0">
          <content>
@@ -30,7 +31,7 @@
                         </Separator>
                      </children>
                   </VBox>
-                  <VBox prefHeight="236.0" prefWidth="360.0" spacing="10.0" style="-fx-background-color: #fbe293;">
+                  <VBox prefHeight="300.0" prefWidth="360.0" spacing="10.0" style="-fx-background-color: #fbe293;">
                      <children>
                         <Label style="-fx-font-size: 18;" text="Email:" />
                         <TextField id="editarEmailjuridico" opacity="0.5" prefHeight="25.0" prefWidth="212.0" promptText="Email..." />
@@ -73,6 +74,18 @@
                            </opaqueInsets>
                         </Label>
                         <TextField id="editarTitular" opacity="0.5" prefHeight="25.0" prefWidth="176.0" promptText="Titular..." />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #fbe293;">
+                     <children>
+                        <Button id="botaoSalvarPJ" mnemonicParsing="false" prefHeight="20.0" prefWidth="60.0" style="-fx-background-color: #8FBC8F;" text="Salvar">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="280.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
                      </children>
                   </VBox>
                </children>
