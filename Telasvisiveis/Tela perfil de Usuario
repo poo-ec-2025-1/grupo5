@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<AnchorPane prefHeight="640" prefWidth="360" style="-fx-background-color: #dff1d0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="640" prefWidth="360" style="-fx-background-color: #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fx:id="profileImage" fitHeight="100" fitWidth="100" layoutX="130.0" layoutY="30.0">
          <image>
