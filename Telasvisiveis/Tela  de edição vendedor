@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<AnchorPane prefHeight="640" prefWidth="360" style="-fx-background-color: #dff1d0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="640" prefWidth="360" style="-fx-background-color:  #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ScrollPane prefHeight="641.0" prefWidth="363.0">
          <content>
             <VBox prefHeight="684.0" prefWidth="360.0">
                <children>
-                  <VBox prefHeight="191.0" prefWidth="254.0" style="-fx-background-color: #dff1d0;">
+                  <VBox prefHeight="191.0" prefWidth="254.0" style="-fx-background-color: #fbe293;">
                      <children>
                         <Label prefHeight="30.0" prefWidth="131.0" style="-fx-font-size: 18;" text="Razao Social:" />
                         <TextField id="editarRazaoSocial" opacity="0.5" prefHeight="25.0" prefWidth="176.0" promptText="Razao social..." />
@@ -30,7 +30,7 @@
                         </Separator>
                      </children>
                   </VBox>
-                  <VBox prefHeight="236.0" prefWidth="360.0" spacing="10.0" style="-fx-background-color: #dff1d0;">
+                  <VBox prefHeight="236.0" prefWidth="360.0" spacing="10.0" style="-fx-background-color: #fbe293;">
                      <children>
                         <Label style="-fx-font-size: 18;" text="Email:" />
                         <TextField id="editarEmailjuridico" opacity="0.5" prefHeight="25.0" prefWidth="212.0" promptText="Email..." />
@@ -47,7 +47,7 @@
                         <Separator layoutX="5.0" prefWidth="320" />
                      </children>
                   </VBox>
-                  <VBox prefHeight="183.0" prefWidth="320.0" style="-fx-background-color: #dff1d0;">
+                  <VBox prefHeight="183.0" prefWidth="320.0" style="-fx-background-color: #fbe293;">
                      <children>
                         <Label style="-fx-font-size: 18;" text="Banco:">
                            <opaqueInsets>
