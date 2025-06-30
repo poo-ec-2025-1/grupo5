@@ -10,7 +10,7 @@ O diagrama inclui as seguintes classes:
 - `Login`: representa o modelo com os dados de acesso
 - `LoginView`: responsável pela parte visual (interface do usuário)
 - `LoginController`: responsável por controlar as interações entre a view e o modelo
-- `telalogin.fxml`: arquivo de layout do JavaFX criado com Scene Builder, utilizado na construção da tela
+- `teladlogin.fxml`: arquivo de layout do JavaFX criado com Scene Builder, utilizado na construção da tela
 
 ------------
 ## Funcionamento da Tela de Login
