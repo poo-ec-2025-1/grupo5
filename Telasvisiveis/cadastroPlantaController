@@ -11,7 +11,7 @@ public class CadastroPlantaController {
 
     private PlantaRepository plantaRepo;
 
-    public CadastroProdutoController() {
+    public CadastroPlantaController() {
         Database db = new Database("Database.java");
         plantaRepo = new PlantaRepository(db);
     }
