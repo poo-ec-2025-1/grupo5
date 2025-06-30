@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<BorderPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simplecart.carrinhoController">
+<BorderPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carrinhoController">
    <top>
       <HBox alignment="CENTER" style="-fx-background-color: #fbe293; -fx-padding: 15; -fx-border-width: 0 0 1 0; -fx-border-color: #e0e0e0;">
          <children>
