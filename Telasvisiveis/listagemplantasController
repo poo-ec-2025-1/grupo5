@@ -25,7 +25,7 @@ public class ListagemPlantasController {
 
     private PlantaRepository plantaRepo;
 
-    public ListagemProdutosController() {
+    public ListagemPlantaController() {
         Database db = new Database("Database.java");
         plantaRepo = new PlantaRepository(db);
     }
