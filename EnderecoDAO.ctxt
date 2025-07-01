@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=EnderecoDAO
+comment1.params=endereco
+comment1.target=void\ salvarEndereco(Endereco)
+numComments=2
