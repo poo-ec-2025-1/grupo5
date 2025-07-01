@@ -155,7 +155,7 @@ Os testes estão sendo realizados de forma manual, com foco em:
 - Funcionamento dos botões e ações associadas  
 - Testes de cadastro, login e fluxo de compra
 
-# Testes das Telas de Finalizar Compra
+### Testes das Telas de Finalizar Compra
 
 - **Descrição geral:**  
   Testes realizados nas telas do fluxo de finalização de compra, verificando a funcionalidade e interação entre elas.
@@ -165,7 +165,8 @@ Os testes estão sendo realizados de forma manual, com foco em:
 - **Detalhes do problema encontrado:**  
   - Ao clicar no botão **"Concluir compra"** na tela de boletos, a transição para a tela de compra finalizada não ocorre.  
   - Esse ponto precisa ser investigado e corrigido para garantir o fluxo completo de finalização de compra.
-# Testes da Tela de Carrinho de Compras
+
+### Testes da Tela de Carrinho de Compras
 
 - **Descrição geral:**  
   A tela de carrinho de compras está funcionando corretamente em sua maior parte, apresentando os produtos adicionados e permitindo interação do usuário.
