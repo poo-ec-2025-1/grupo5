@@ -1,0 +1,63 @@
+package controller;
+
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.Parent;
+import javafx.scene.control.ListView;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+import model.Planta;
+import repository.PlantaRepository;
+import util.Database;
+
+import java.util.List;
+
+public class ListagemPlantasController {
+
+    @FXML private ListView<String> listaPlantas;
+    @FXML private Button direcionalCarrinho;
+    @FXML private Button direcionalPerfil;
+    @FXML private Button direcionalPrincipal;
+
+    private final PlantaRepository plantaRepo;
+
+    public ListagemPlantasController() {
+        Database db = new Database("Database.java");
+        plantaRepo = new PlantaRepository(db);
+    }
+
+    @FXML
+    public void initialize() {
+        carregarLista();
+        configurarBotoesDeNavegacao();
+    }
+
+    private void carregarLista() {
+        List<Planta> plantas = plantaRepo.loadAll();
+        listaPlantas.getItems().clear();
+        for (Planta p : plantas) {
+            String item = p.getNome() + " - " + p.getCategoria() + " - R$" + String.format("%.2f", p.getPreco());
+            listaPlantas.getItems().add(item);
+        }
+    }
+
+    private void configurarBotoesDeNavegacao() {
+        direcionalCarrinho.setOnAction(e -> abrirTela("/view/telacarrinho.fxml", "Carrinho"));
+        direcionalPerfil.setOnAction(e -> abrirTela("/view/perfil.fxml", "Perfil"));
+        direcionalPrincipal.setOnAction(e -> abrirTela("/view/telaprincipal.fxml", "Tela Principal"));
+    }
+
+    private void abrirTela(String caminhoFXML, String titulo) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(caminhoFXML));
+            Stage stage = new Stage();
+            stage.setTitle(titulo);
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
