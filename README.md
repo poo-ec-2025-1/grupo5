@@ -1,5 +1,5 @@
 # grupo5
-# Projeto(nome a definir)
+# Projeto(Marketplace de Plantas)
 
 ## Membros e funções
 Eik Ericson de Oliveira Filho (líder)\
