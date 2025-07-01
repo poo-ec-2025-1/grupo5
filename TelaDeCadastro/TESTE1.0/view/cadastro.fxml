@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.PlantaController"
+      prefWidth="830.0" prefHeight="592.0">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu text="Arquivo">
+          <items>
+            <MenuItem text="Novo banco de dados"/>
+            <MenuItem text="Abrir Banco de Dados"/>
+            <MenuItem text="Fechar Banco de Dados"/>
+            <MenuItem text="Sair"/>
+          </items>
+        </Menu>
+        <Menu text="Sobre">
+          <items>
+            <MenuItem text="Sobre o JavaFX CRUD"/>
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+
+    <AnchorPane VBox.vgrow="ALWAYS">
+      <children>
+        <TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+          <tabs>
+            <Tab text="Cadastro de Plantas">
+              <content>
+                <AnchorPane>
+                  <children>
+                    <SplitPane orientation="VERTICAL" dividerPositions="0.5"
+                               AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+                               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                      <items>
+                        <!-- Formulário -->
+                        <AnchorPane>
+                          <children>
+                            <Pane AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+                                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                              <children>
+                                <Label layoutX="266.0" layoutY="8.0" text="Cadastro de Planta">
+                                  <font>
+                                    <Font size="19.0"/>
+                                  </font>
+                                </Label>
+
+                                <Label layoutX="159.0" layoutY="50.0" text="Id"/>
+                                <TextField fx:id="idField" layoutX="339.0" layoutY="45.0" editable="false" disable="true"/>
+
+                                <Label layoutX="158.0" layoutY="95.0" text="Nome"/>
+                                <TextField fx:id="nomeField" layoutX="339.0" layoutY="82.0" disable="true"/>
+
+                                <Label layoutX="158.0" layoutY="129.0" text="Categoria"/>
+                                <TextField fx:id="categoriaField" layoutX="339.0" layoutY="124.0" disable="true"/>
+
+                                <Label layoutX="159.0" layoutY="169.0" text="Preço"/>
+                                <TextField fx:id="precoField" layoutX="339.0" layoutY="164.0" disable="true"/>
+
+                                <Label layoutX="159.0" layoutY="209.0" text="Descrição"/>
+                                <TextField fx:id="descricaoField" layoutX="339.0" layoutY="204.0" disable="true"/>
+
+                                <Button fx:id="adicionarButton" layoutX="156.0" layoutY="250.0" text="Adicionar" onAction="#onAdicionarButtonAction"/>
+                                <Button fx:id="atualizarButton" layoutX="237.0" layoutY="250.0" text="Atualizar" disable="true"/>
+                                <Button fx:id="deletarButton" layoutX="313.0" layoutY="250.0" text="Deletar" disable="true"/>
+                                <Button fx:id="cancelarButton" layoutX="382.0" layoutY="250.0" text="Cancelar" disable="true" onAction="#onCancelarButtonAction"/>
+                                <Button fx:id="salvarButton" layoutX="457.0" layoutY="250.0" text="Salvar" disable="true" onAction="#onSalvarButtonAction"/>
+                              </children>
+                            </Pane>
+                          </children>
+                        </AnchorPane>
+
+                        <!-- Tabela -->
+                        <AnchorPane>
+                          <TableView fx:id="tabela" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+                                     AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <columns>
+                              <TableColumn fx:id="idCol" text="ID" prefWidth="75.0"/>
+                              <TableColumn fx:id="nomeCol" text="Nome" prefWidth="150.0"/>
+                              <TableColumn fx:id="categoriaCol" text="Categoria" prefWidth="150.0"/>
+                              <TableColumn fx:id="precoCol" text="Preço" prefWidth="100.0"/>
+                              <TableColumn fx:id="descricaoCol" text="Descrição" prefWidth="250.0"/>
+                            </columns>
+                          </TableView>
+                        </AnchorPane>
+                      </items>
+                    </SplitPane>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+
+            <Tab text="Outros Cadastros">
+              <content>
+                <AnchorPane/>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
