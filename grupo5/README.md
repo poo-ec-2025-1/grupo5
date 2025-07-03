@@ -72,7 +72,8 @@ Execute a classe Main.java para iniciar o aplicativo.
 /model  
     Planta.java  
     SessaoCompra.java  
-    PlantaRepositorio.java  
+    PlantaRepositorio.java
+    
 /controller  
     LoginController.java  
     CadastroPlantaController.java  
@@ -81,7 +82,8 @@ Execute a classe Main.java para iniciar o aplicativo.
     FormaDePagamentoController.java  
     PixController.java  
     CartaoDeCreditoController.java  
-    CompraFinalizadaController.java  
+    CompraFinalizadaController.java
+    
 /view  
     Login.fxml  
     TelaPrincipal.fxml  
