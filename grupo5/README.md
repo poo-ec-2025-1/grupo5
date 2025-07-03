@@ -24,9 +24,9 @@ Abra o projeto no BlueJ ou IDE de sua preferência.
 Execute a classe Main.java para iniciar o aplicativo.
 
 ### Autores
-Rodrigo Frota Telles da Silva
-Millena Pimentel
-Letícia Barbosa
+* Rodrigo Frota Telles da Silva
+* Millena Pimentel
+* Letícia Barbosa
 
 
 ---
