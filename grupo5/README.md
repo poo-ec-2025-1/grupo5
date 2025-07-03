@@ -52,7 +52,7 @@ Execute a classe Main.java para iniciar o aplicativo.
 - Selecionar plantas
 - Adicionar ao carrinho
 
-###Finalizar compra
+### Finalizar compra
 - Endereço de Entrega: escolha entre usar um endereço salvo ou inserir novo.
 - Forma de Pagamento:
 - Pix
