@@ -67,7 +67,7 @@ Execute a classe Main.java para iniciar o aplicativo.
 - Cancelamento ou edição de pedidos.
 - Tela de gerenciamento para o vendedor.
 
-##Estrutura de Pastas (resumida)
+## Estrutura de Pastas (resumida)
 
 /model
     Planta.java
