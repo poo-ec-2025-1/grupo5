@@ -69,29 +69,29 @@ Execute a classe Main.java para iniciar o aplicativo.
 
 ## Estrutura de Pastas (resumida)
 
-/model
-    Planta.java
-    SessaoCompra.java
-    PlantaRepositorio.java
-/controller
-    LoginController.java
-    CadastroPlantaController.java
-    CompraController.java
-    EnderecoDeEntregaController.java
-    FormaDePagamentoController.java
-    PixController.java
-    CartaoDeCreditoController.java
-    CompraFinalizadaController.java
-/view
-    Login.fxml
-    TelaPrincipal.fxml
-    CadastroPlanta.fxml
-    Compra.fxml
-    EnderecoDeEntrega.fxml
-    FormaDePagamento.fxml
-    Pix.fxml
-    CartaoDeCredito.fxml
-    CompraFinalizada.fxml
+/model  
+    Planta.java  
+    SessaoCompra.java  
+    PlantaRepositorio.java  
+/controller  
+    LoginController.java  
+    CadastroPlantaController.java  
+    CompraController.java  
+    EnderecoDeEntregaController.java  
+    FormaDePagamentoController.java  
+    PixController.java  
+    CartaoDeCreditoController.java  
+    CompraFinalizadaController.java  
+/view  
+    Login.fxml  
+    TelaPrincipal.fxml  
+    CadastroPlanta.fxml  
+    Compra.fxml  
+    EnderecoDeEntrega.fxml  
+    FormaDePagamento.fxml  
+    Pix.fxml  
+    CartaoDeCredito.fxml  
+    CompraFinalizada.fxml  
 
 ### Observações:
 
