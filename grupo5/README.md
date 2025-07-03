@@ -19,7 +19,7 @@ Projeto em fase de Produto Mínimo Viável (PMV)
 
 2. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   [git clone https://github.com/seu-usuario/seu-repositorio.git](https://github.com/poo-ec-2025-1/grupo5.git)
 Abra o projeto no BlueJ ou IDE de sua preferência.
 Execute a classe Main.java para iniciar o aplicativo.
 
