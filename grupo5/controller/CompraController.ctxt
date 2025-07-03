@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=CompraController
+comment1.params=
+comment1.target=CompraController()
+comment2.params=
+comment2.target=void\ initialize()
+comment3.params=
+comment3.target=void\ atualizarLista()
+comment4.params=
+comment4.target=void\ adicionarAoCarrinho()
+comment5.params=event
+comment5.target=void\ finalizarCompra(javafx.event.ActionEvent)
+comment6.params=titulo\ mensagem
+comment6.target=void\ mostrarAlerta(java.lang.String,\ java.lang.String)
+comment7.params=
+comment7.target=void\ voltar()
+comment8.params=
+comment8.target=void\ sair()
+numComments=9

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=FormaDePagamentoController
+comment1.params=event
+comment1.target=void\ handleCartaoDeCredito(javafx.event.ActionEvent)
+comment2.params=event
+comment2.target=void\ handlePix(javafx.event.ActionEvent)
+comment3.params=event
+comment3.target=void\ handleBoleto(javafx.event.ActionEvent)
+comment4.params=event\ caminhoFXML\ titulo
+comment4.target=void\ trocarTela(javafx.event.ActionEvent,\ java.lang.String,\ java.lang.String)
+numComments=5

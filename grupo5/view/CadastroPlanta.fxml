@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroPlantaController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Arquivo">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Sair" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Ajuda">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Sobre" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    
+    <AnchorPane VBox.vgrow="ALWAYS">
+      <children>
+        <TabPane AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+            <Tab text="Cadastro de Plantas">
+              <content>
+                <AnchorPane>
+                  <children>
+                    <SplitPane orientation="VERTICAL" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                      <items>
+                        <!-- Parte de Formulário -->
+                        <AnchorPane>
+                          <children>
+                            <Label layoutX="20.0" layoutY="10.0" text="Cadastro de Plantas">
+                              <font>
+                                <Font size="18.0" />
+                              </font>
+                            </Label>
+                            
+                            <Label layoutX="20.0" layoutY="50.0" text="ID" />
+                            <TextField fx:id="campoId" layoutX="150.0" layoutY="45.0" editable="false" disable="true" />
+                            
+                            <Label layoutX="20.0" layoutY="90.0" text="Nome" />
+                            <TextField fx:id="campoNome" layoutX="150.0" layoutY="85.0" />
+                            
+                            <Label layoutX="20.0" layoutY="130.0" text="Preço" />
+                            <TextField fx:id="campoPreco" layoutX="150.0" layoutY="125.0" />
+                            
+                            <Label layoutX="20.0" layoutY="170.0" text="Categoria" />
+                            <TextField fx:id="campoCategoria" layoutX="150.0" layoutY="165.0" />
+                            
+                            <Label layoutX="20.0" layoutY="210.0" text="Descrição" />
+                            <TextField fx:id="campoDescricao" layoutX="150.0" layoutY="205.0" />
+                            
+                            <Button fx:id="btnAdicionar" layoutX="150.0" layoutY="260.0" text="Adicionar" onAction="#cadastrarPlanta" />
+                            <Button fx:id="btnAtualizar" layoutX="240.0" layoutY="260.0" text="Atualizar" onAction="#onAtualizar" />
+                            <Button fx:id="btnDeletar" layoutX="330.0" layoutY="260.0" text="Deletar" onAction="#removerPlanta" />
+                            <Button fx:id="btnCancelar" layoutX="420.0" layoutY="260.0" text="Cancelar" onAction="#onCancelar" />
+                            <Button fx:id="btnSalvar" layoutX="510.0" layoutY="260.0" text="Salvar" onAction="#onSalvar" />
+                          </children>
+                        </AnchorPane>
+
+                        <!-- Parte da Tabela -->
+                        <AnchorPane>
+                          <children>
+                            <TableView fx:id="tabelaPlantas" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                              <columns>
+                                <TableColumn fx:id="colNome" text="Nome" prefWidth="150" />
+                                <TableColumn fx:id="colPreco" text="Preço" prefWidth="100" />
+                                <TableColumn fx:id="colCategoria" text="Categoria" prefWidth="150" />
+                                <TableColumn fx:id="colDescricao" text="Descrição" prefWidth="300" />
+                              </columns>
+                            </TableView>
+                          </children>
+                        </AnchorPane>
+                      </items>
+                    </SplitPane>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
