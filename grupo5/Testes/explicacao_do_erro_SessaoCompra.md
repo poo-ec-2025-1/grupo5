@@ -41,8 +41,8 @@ Com essa alteração, o método limpar() pode limpar a lista com segurança, sem
 #  Resultado
 Após aplicar a correção:
 
--O erro deixou de ocorrer.
--O teste SessaoCompraTest passou com sucesso.
+-O erro deixou de ocorrer.\
+-O teste SessaoCompraTest passou com sucesso.\
 -A classe SessaoCompra ficou mais robusta e segura para uso com diferentes tipos de listas.
 
 
