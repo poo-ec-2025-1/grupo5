@@ -1,54 +1,78 @@
-## Relatório Individual – Projeto Java (Marketplace de Plantas)
+# Relatório Individual - Projeto Marketplace de Plantas 🌱
 
-**Autor**: Rodrigo Frota  
-**Repositório**: [https://github.com/poo-ec-2025-1/grupo5.git]  
-**Data**: 30/06/2025
-
----
-
-### 🛠️ 1. Domínio do Ambiente e Ferramentas
-
-Durante o desenvolvimento do projeto, foi possível consolidar o uso de diversas ferramentas importantes para o ciclo de vida de software:
-
-- **Git e GitHub**: controle de versão, commits com mensagens descritivas, branches e merge. Também usamos `issues` e `projetos` para organizar o trabalho.
-- **BlueJ**: utilizado como ambiente principal para a estruturação, execução e testes do código Java com interface gráfica (JavaFX).
-- **Scene Builder**: ferramenta utilizada para montar a interface gráfica (.fxml) conectada ao JavaFX.
+**Aluno:** Rodrigo Frota  
+**Curso:** [Engenharia de Computação]  
+**Disciplina:** Programação Orientada a Objetos / Projeto Integrador  
+**Data:** Julho de 2025  
 
 ---
 
-### 2. Domínio da Linguagem Java
+## Domínio do Ambiente e Ferramentas
 
-As funcionalidades do projeto foram implementadas utilizando conceitos importantes da linguagem Java:
+Durante o desenvolvimento do projeto "Marketplace de Plantas", utilizei com frequência diversas ferramentas fundamentais para a prática da programação profissional:
 
-- Criação de **classes**, **métodos**, **construtores** e **encapsulamento**.
-- Utilização de **eventos JavaFX** (por exemplo, com `@FXML` e `onAction`).
-- Implementação de um modelo de **CRUD completo** com integração com banco de dados via ORMLite.
-- Separação de responsabilidades com o padrão **MVC (Model-View-Controller)**.
-- **Cadastro de Plantas:** Tela completa de cadastro, leitura, atualização e deleção de plantas (CRUD).
-- **Tela de Login:** Tela inicial do sistema com autenticação básica.
-**Exemplos de classes implementadas:**
-
-- `Planta` (modelo da entidade)
-- `PlantaRepositorio` (acesso ao banco de dados)
-- `PlantaController` (lógica de controle da interface)
-- `PlantaView` (adaptador para exibição em TableView)
+- **Git e GitHub:** Criei e gerenciei o repositório do grupo, organizando branches, commits, pull requests e integrando as funcionalidades de cada integrante. Aprendi a versionar o projeto, clonar, fazer merge e resolver conflitos.
+- **BlueJ:** Utilizado para desenvolver e testar o backend em Java com ORMLite, focado na simplicidade de visualização das classes.
+- **Scene Builder + JavaFX:** Construí as interfaces gráficas com foco em usabilidade para dispositivos móveis, adaptando componentes como `VBox`, `TabPane` e `AnchorPane`.
+- **VS Code:** Para edição rápida de arquivos `.md`, documentação e ajustes de código.
 
 ---
 
-### 3. Domínio da Modelagem
+## Domínio da Linguagem Java
 
-O projeto foi guiado por uma modelagem prévia que incluiu os seguintes diagramas UML:
+Durante a construção do projeto, evoluí bastante em Java:
 
-- **Diagrama de Classes**: representação das principais entidades e seus relacionamentos (`Planta`, `PlantaRepositorio`, `Database`, `PlantaView`, etc).
-- **Diagrama de Casos de Uso**: representando as interações do usuário com o sistema, como “Cadastrar Planta”, “Atualizar Planta”, “Remover Planta”.
-- **Diagrama de Sequência**: ilustrando o fluxo entre a interface (`PlantaController`), o modelo (`Planta`) e o repositório.
+- Modelei classes como `Planta`, `SessaoCompra`, `PlantaRepositorio` e `Database`, com uso de encapsulamento, métodos úteis e padrão Singleton.
+- Trabalhei com **coleções**, `List`, `ObservableList`, e **streams** para cálculo de totais.
+- Usei bibliotecas como **ORMLite** para persistência de dados com SQLite.
+- Implementei controllers com JavaFX (@FXML), eventos de botão e navegação entre telas.
+
+Todos os métodos foram criados de forma coerente com a modelagem e com atenção à manutenção do código. Por exemplo, a classe `SessaoCompra` foi melhorada para evitar erros com listas imutáveis, algo que descobrimos ao testar com JUnit.
+
 ---
 
-### 📄 4. Domínio da Documentação
+## Domínio da Modelagem
 
-A documentação do projeto foi feita com arquivos Markdown para facilitar a leitura e colaboração. Exemplos:
+Além da implementação, também participei da modelagem inicial do projeto:
 
-- `README.md`: explicação geral do projeto, como executar, estrutura de pastas e principais funcionalidades.
-- `relatorioRodrigo.md`: este relatório.
-- Documentação de código com comentários e nomes de métodos representativos.
+- **Diagrama de Classes:** Modelei as classes essenciais, como Planta, SessaoCompra, e o fluxo de Controllers.
+- **Diagrama de Casos de Uso:** Delimitei as funcionalidades do usuário (cadastrar plantas, comprar plantas, efetuar pagamento).
+- **Diagrama de Sequência:** Modelei o fluxo da finalização de compra, da seleção do produto até a confirmação do pagamento (Pix, Cartão).
 
+Esses diagramas foram importantes para garantir que cada parte do sistema tivesse coesão e lógica.
+
+---
+
+## Domínio da Documentação
+
+O projeto está **bem documentado**, com os seguintes recursos:
+
+- Criei o **README.md** com todas as instruções de uso, objetivos do projeto, e estrutura dos diretórios (`/model`, `/view`, `/controller`).
+- Adicionei comentários nos códigos e utilizei nomes de classes e métodos claros e autoexplicativos.
+- No GitHub, organizei o projeto com **Kanban**, **issues** e prazos, dividindo tarefas com minha equipe e acompanhando o progresso.
+- Também mantive organização em commits e mensagens descritivas.
+
+---
+
+## Esforço e Contribuição
+
+Participei ativamente desde o início até a entrega final. Fui responsável por:
+
+- Criar a **navegação completa entre telas** (Login → Tela Principal → Compra → Endereço → Pagamento → Finalização).
+- Integrar a **persistência com SQLite usando ORMLite**.
+- Desenvolver funcionalidades de adicionar plantas, exibir tabela, cadastrar, atualizar, deletar, salvar e cancelar.
+- Implementar controle de sessão (`SessaoCompra`), tratamento de erros, feedbacks visuais com Alertas e QR Code no Pix.
+- Ajustar telas para formato **mobile-friendly**, substituindo MenuBar por botões de voltar.
+- Apoiar colegas com integração e testes.
+
+---
+
+## Conclusão
+
+O projeto "Marketplace de Plantas" foi uma oportunidade de aplicar na prática conceitos de orientação a objetos, interface gráfica, persistência de dados e colaboração em equipe. 
+
+Saio desse projeto com mais domínio técnico, autonomia para pesquisar soluções e capacidade de entregar uma aplicação funcional e bem estruturada.  
+
+Estou satisfeito com meu desempenho e comprometido em continuar evoluindo para desafios ainda maiores.
+
+---
