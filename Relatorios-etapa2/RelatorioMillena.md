@@ -1,4 +1,4 @@
- # 🌿 Relato do Desenvolvimento – Primeira Versão do Projeto
+ # 🌿 Relato do Desenvolvimento – Projeto E-commerce Planta
 
 ## 🎯 Objetivo Inicial
 
