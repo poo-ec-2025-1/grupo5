@@ -1,0 +1,79 @@
+@startuml
+
+package model {
+
+    class Planta {
+        - id: int
+        - nome: String
+        - preco: double
+        - categoria: String
+        - descricao: String
+        + getId(): int
+        + getNome(): String
+        + setNome(String): void
+        + getPreco(): double
+        + setPreco(double): void
+        + getCategoria(): String
+        + setCategoria(String): void
+        + getDescricao(): String
+        + setDescricao(String): void
+        + toString(): String
+    }
+
+    class SessaoCompra {
+        - carrinho: List<Planta>
+        - total: double
+        - instancia: SessaoCompra
+        + getInstancia(): SessaoCompra
+        + setCarrinho(List<Planta>): void
+        + getCarrinho(): List<Planta>
+        + getTotal(): double
+        + limpar(): void
+        + adicionarPlanta(Planta): void
+        + removerPlanta(Planta): void
+    }
+
+    class Compra {
+        - id: int
+        - total: double
+        - data: Date
+        - formaPagamento: String
+    }
+
+    class CompraItem {
+        - id: int
+        - compra: Compra
+        - planta: Planta
+    }
+
+    class PlantaRepositorio {
+        - database: Database
+        - dao: Dao<Planta, Integer>
+        - loadedPlantas: List<Planta>
+        - loadedPlanta: Planta
+        + adicionar(Planta): Planta
+        + atualizar(Planta): void
+        + deletar(Planta): void
+        + buscarPorId(int): Planta
+        + listarTodas(): List<Planta>
+        + setDatabase(Database): void
+    }
+
+    class Database {
+        - databaseName: String
+        - connection: JdbcConnectionSource
+        + getConnection(): JdbcConnectionSource
+        + close(): void
+    }
+
+    SessaoCompra --> "1..*" Planta : usa
+    CompraItem --> Planta : refere-se
+    CompraItem --> Compra : pertence a
+    PlantaRepositorio --> Planta : manipula
+    PlantaRepositorio --> Database : usa conexão
+    Compra --> "1..*" CompraItem : contém
+
+}
+
+@enduml
+
