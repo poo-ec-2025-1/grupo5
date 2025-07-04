@@ -81,6 +81,9 @@ Execute a classe Main.java para iniciar o aplicativo.
 ### Tela de Compra
 ![Tela de Compra](images/compra.png)
 
+### Tela de forma de Pagamento
+![Tela de Pagamento](images/telapagamento.png)
+
 ### Endereço de Entrega
 ![Endereço de Entrega](images/endereco.png)
 
