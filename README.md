@@ -25,8 +25,8 @@ Execute a classe Main.java para iniciar o aplicativo.
 
 ### Autores
 * Rodrigo Frota Telles da Silva
-* Millena Pimentel
-* Letícia Barbosa
+* Millena Costa Pimentel
+* Letícia Barbosa Taveira Santana
 
 
 ---
