@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor Usuario
+
+rectangle "Marketing place de Plantas" {
+  usecase "Realizar Login" as UC1
+  usecase "Cadastrar Planta" as UC2
+  usecase "Comprar Planta" as UC3
+  usecase "Adicionar ao carrinho" as UC4
+  usecase "Finalizar Compra" as UC5
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+Usuario --> UC5
+@enduml
