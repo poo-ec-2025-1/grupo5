@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=PlantaRepositorio
-comment1.params=database
-comment1.target=PlantaRepositorio(model.Database)
-comment2.params=planta
-comment2.target=model.Planta\ create(model.Planta)
-comment3.params=
-comment3.target=java.util.List\ loadAll()
-numComments=4
