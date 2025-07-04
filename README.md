@@ -35,6 +35,7 @@ Execute a classe Main.java para iniciar o aplicativo.
 ### Login
 - Tela inicial com botão de login (simulado nesta versão).
 - Acesso direto à tela principal após clicar no botão.
+
 ### Tela Principal
 - Escolha entre cadastrar uma planta para venda ou comprar plantas.
 
@@ -60,7 +61,6 @@ Execute a classe Main.java para iniciar o aplicativo.
 - Confirmação de Pagamento: após confirmar, o app exibe uma tela de “Compra Finalizada”.
 
 ## Funcionalidades Futuras (melhorias)
-
 - Sistema real de login com persistência no banco.
 - Histórico de compras por usuário.
 - Upload de imagens das plantas.
