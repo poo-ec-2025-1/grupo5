@@ -1,0 +1,27 @@
+@startuml
+actor Usuario
+participant Sistema
+participant Banco
+
+Usuario -> Sistema : login(usuário, senha)
+Sistema --> Usuario : confirmação de login
+
+Usuario -> Sistema : comprarPlanta()
+Sistema -> Banco : buscarPlantas()
+Banco --> Sistema : lista de plantas
+Sistema --> Usuario : exibir plantas disponíveis
+
+Usuario -> Sistema : selecionarPlanta(id)
+Sistema -> Banco : verificarDisponibilidade(id)
+Banco --> Sistema : planta disponível
+
+Usuario -> Sistema : escolherFormaDePagamento(opcao)
+Sistema -> Banco : processarPagamento(dadosPagamento)
+Banco --> Sistema : pagamento aprovado
+
+Sistema -> Banco : registrarCompra(idUsuario, idPlanta)
+Banco --> Sistema : compra registrada
+
+Sistema --> Usuario : confirmação de compra e detalhes
+
+@enduml
