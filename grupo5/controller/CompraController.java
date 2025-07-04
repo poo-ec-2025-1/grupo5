@@ -53,6 +53,18 @@ public class CompraController {
 
         atualizarLista();
     }
+    @FXML
+    private void voltarParaTelaPrincipal(ActionEvent event) {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/TelaPrincipal.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root, 360, 640));
+        stage.setTitle("Tela Principal");
+        stage.show();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    }
 
     private void atualizarLista() {
         List<Planta> plantas = plantaRepositorio.listarTodas();
@@ -60,8 +72,8 @@ public class CompraController {
         tabelaPlantas.setItems(listaPlantas);
     }
 
- @FXML
-private void adicionarAoCarrinho() {
+    @FXML
+    private void adicionarAoCarrinho() {
     Planta selecionada = tabelaPlantas.getSelectionModel().getSelectedItem();
     if (selecionada != null) {
         SessaoCompra sessao = SessaoCompra.getInstancia();
@@ -72,11 +84,11 @@ private void adicionarAoCarrinho() {
     } else {
         mostrarAlerta("Aviso", "Selecione uma planta para adicionar ao carrinho.");
     }
-}
+    }
 
 
-@FXML
-private void finalizarCompra(ActionEvent event) {
+    @FXML
+    private void finalizarCompra(ActionEvent event) {
     SessaoCompra sessao = SessaoCompra.getInstancia();
     if (sessao.getCarrinho().isEmpty()) {
         mostrarAlerta("Carrinho vazio", "Adicione plantas ao carrinho antes de finalizar a compra.");
@@ -93,7 +105,7 @@ private void finalizarCompra(ActionEvent event) {
         e.printStackTrace();
         mostrarAlerta("Erro", "Erro ao carregar a tela de Endereço de Entrega.");
     }
-}
+    }
 
 
 
