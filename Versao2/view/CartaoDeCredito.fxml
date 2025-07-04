@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="controller.CartaoDeCreditoController" prefHeight="640.0" prefWidth="360.0" 
+            style="-fx-background-color: #fbe293;">
+   <children>
+      <Label layoutX="14.0" layoutY="25.0" style="-fx-font-weight: bold;" text="Cartão de Crédito">
+         <font><Font size="20.0" /></font>
+      </Label>
+      
+      <TextField fx:id="numeroCartaoField" layoutX="19.0" layoutY="128.0" prefHeight="26.0" prefWidth="321.0" promptText="0000 0000 0000 0000"/>
+      <TextField fx:id="nomeCartaoField" layoutX="19.0" layoutY="175.0" prefHeight="26.0" prefWidth="321.0" promptText="Nome do titular"/>
+      <TextField fx:id="validadeField" layoutX="20.0" layoutY="221.0" prefHeight="26.0" prefWidth="109.0" promptText="00/00/0000"/>
+      <TextField fx:id="cvvField" layoutX="200.0" layoutY="222.0" prefHeight="26.0" prefWidth="56.0" promptText="CVV"/>
+
+      <Label layoutX="19.0" layoutY="110.0" text="Número do cartão"/>
+      <Label layoutX="20.0" layoutY="155.0" text="Nome do titular"/>
+      <Label layoutX="20.0" layoutY="204.0" text="Data de validade"/>
+      <Label layoutX="172.0" layoutY="205.0" text="Código de segurança"/>
+
+      <Button fx:id="botaoSalvar" layoutX="136.0" layoutY="457.0" mnemonicParsing="false"
+              style="-fx-background-color: #993366;" text="Salvar" textFill="WHITE" 
+              onAction="#salvarDados">
+         <font><Font size="18.0" /></font>
+      </Button>
+
+      <Label layoutX="18.0" layoutY="296.0" style="-fx-font-weight: bold;" text="Número de parcelas"/>
+
+      <RadioButton fx:id="parcela1" layoutX="21.0" layoutY="336.0" mnemonicParsing="false" text="1 x"/>
+      <RadioButton fx:id="parcela2" layoutX="22.0" layoutY="362.0" mnemonicParsing="false" text="2 x sem juros"/>
+      <RadioButton fx:id="parcela3" layoutX="156.0" layoutY="336.0" mnemonicParsing="false" text="3 x sem juros"/>
+      <RadioButton fx:id="parcela4" layoutX="156.0" layoutY="362.0" mnemonicParsing="false" text="4 x sem juros"/>
+   </children>
+</AnchorPane>

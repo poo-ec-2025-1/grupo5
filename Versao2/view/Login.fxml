@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <TextField fx:id="campoEmail" layoutX="74.0" layoutY="224.0" prefHeight="25.0" prefWidth="200.0" promptText="E-mail" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="220.0" />
+      <PasswordField fx:id="campoSenha" layoutX="74.0" layoutY="278.0" prefHeight="25.0" prefWidth="200.0" promptText="Senha" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="270.0" />
+      <Button layoutX="122.0" layoutY="349.0" onAction="#entrar" prefHeight="55.0" prefWidth="120.0" style="-fx-font-size: 18; -fx-background-color: #f1889b; -fx-padding: 15;" text="Entrar" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="320.0" />
+      <ImageView fitHeight="175.0" fitWidth="250.0" layoutX="55.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@folhasapp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="215.0" fitWidth="235.0" layoutX="128.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@florapp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

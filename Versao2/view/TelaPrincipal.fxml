@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="640.0" prefWidth="360.0" spacing="20">
+         <children>
+            <Text boundsType="VISUAL" cache="true" fontSmoothingType="LCD" stroke="#f1889b" strokeWidth="0.2" style="-fx-font-size: 25;" text="Bem-vindo ao Marketplace de Plantas!" wrappingWidth="305.8505859375">
+               <VBox.margin>
+                  <Insets top="-250.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button onAction="#irParaCadastroPlantas" prefWidth="200" style="-fx-background-color: #f1889b; -fx-padding: 15; -fx-font-size: 18; -fx-label-padding: 2;" text="Cadastrar Plantas">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Button onAction="#irParaCarrinho" prefWidth="200" style="-fx-background-color: #f1889b; -fx-padding: 15; -fx-font-size: 18; -fx-label-padding: 2;" text="Comprar Plantas" />
+            <ImageView fitHeight="275.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="-305.0" left="120.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@plantinhaAlgodao.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

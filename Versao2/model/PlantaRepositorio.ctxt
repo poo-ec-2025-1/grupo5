@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=PlantaRepositorio
+comment1.params=db
+comment1.target=PlantaRepositorio(Database)
+comment2.params=db
+comment2.target=void\ setDatabase(Database)
+comment3.params=planta
+comment3.target=Planta\ adicionar(Planta)
+comment4.params=planta
+comment4.target=void\ atualizar(Planta)
+comment5.params=planta
+comment5.target=void\ deletar(Planta)
+comment6.params=id
+comment6.target=Planta\ buscarPorId(int)
+comment7.params=
+comment7.target=java.util.List\ listarTodas()
+numComments=8
