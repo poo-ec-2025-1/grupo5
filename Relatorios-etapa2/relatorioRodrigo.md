@@ -27,7 +27,7 @@ Durante a construção do projeto, evoluí bastante em Java:
 - Usei bibliotecas como **ORMLite** para persistência de dados com SQLite.
 - Implementei controllers com JavaFX (@FXML), eventos de botão e navegação entre telas.
 - [Commit: Projeto do Bluej](https://github.com/poo-ec-2025-1/grupo5/commit/7f80a6c6d6532036ec59571b176555ffbbbe18e8)
-- [Commit da criação do README.md com explicações do projeto](https://github.com/poo-ec-2025-1/grupo5/tree/main/grupo5#readme)
+- [README.md com explicações do projeto](https://github.com/poo-ec-2025-1/grupo5/tree/main/grupo5#readme)
 
 
 
