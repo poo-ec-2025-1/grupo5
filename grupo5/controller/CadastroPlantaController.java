@@ -4,6 +4,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.scene.Node;
+import java.io.IOException;
 
 import model.Planta;
 import model.PlantaRepositorio;
@@ -62,6 +68,19 @@ public class CadastroPlantaController {
             }
         });
     }
+    @FXML
+    private void voltarParaTelaPrincipal(javafx.event.ActionEvent event) {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/TelaPrincipal.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root, 360, 640)); // layout mobile
+        stage.setTitle("Tela Principal");
+        stage.show();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    }
+
 
     private void atualizarLista() {
         List<Planta> plantas = plantaRepositorio.listarTodas();
