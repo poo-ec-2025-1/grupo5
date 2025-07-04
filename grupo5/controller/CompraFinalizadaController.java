@@ -19,7 +19,7 @@ public class CompraFinalizadaController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/view/TelaPrincipal.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setScene(new Scene(root, 700, 500)); // ajuste se sua TelaPrincipal tiver outro tamanho
+            stage.setScene(new Scene(root, 360, 640));
             stage.setTitle("Tela Principal");
             stage.show();
         } catch (Exception e) {
