@@ -19,10 +19,11 @@ public class SessaoCompra {
         return instancia;
     }
 
-    public void setCarrinho(List<Planta> carrinho) {
-        this.carrinho = carrinho;
-        calcularTotal();
+        public void setCarrinho(List<Planta> carrinho) {
+    this.carrinho = new ArrayList<>(carrinho); // Cópia mutável
+    calcularTotal();
     }
+
 
     public List<Planta> getCarrinho() {
         return carrinho;
