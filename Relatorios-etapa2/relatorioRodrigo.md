@@ -1,7 +1,7 @@
 # Relatório Individual - Projeto Marketplace de Plantas 🌱
 
 **Aluno:** Rodrigo Frota  
-**Curso:** [Engenharia de Computação]  
+**Curso:** Engenharia de Computação  
 **Disciplina:** Programação Orientada a Objetos / Projeto Integrador  
 **Data:** Julho de 2025  
 
