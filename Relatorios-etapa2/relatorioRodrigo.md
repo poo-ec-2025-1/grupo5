@@ -26,8 +26,11 @@ Durante a construção do projeto, evoluí bastante em Java:
 - Trabalhei com **coleções**, `List`, `ObservableList`, e **streams** para cálculo de totais.
 - Usei bibliotecas como **ORMLite** para persistência de dados com SQLite.
 - Implementei controllers com JavaFX (@FXML), eventos de botão e navegação entre telas.
+- [Commit: Projeto do Bluej](https://github.com/poo-ec-2025-1/grupo5/commit/7f80a6c6d6532036ec59571b176555ffbbbe18e8)
+- [Criação do README.md com explicações do projeto](https://github.com/poo-ec-2025-1/grupo5/commit/03fdf4b694b0e1d0d750f9b7fb157105f1077275)
 
-Todos os métodos foram criados de forma coerente com a modelagem e com atenção à manutenção do código. Por exemplo, a classe `SessaoCompra` foi melhorada para evitar erros com listas imutáveis, algo que descobrimos ao testar com JUnit.
+
+
 
 ---
 
