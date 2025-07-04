@@ -19,16 +19,13 @@
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
    </padding>
    <children>
-      <MenuBar style="-fx-background-color: #ecb300;" VBox.vgrow="NEVER">
-         <menus>
-            <Menu text="Arquivo">
-               <items>
-                  <MenuItem onAction="#voltar" text="Voltar" />
-                  <MenuItem onAction="#sair" text="Sair" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
+<Button fx:id="btnVoltar"
+        onAction="#voltarParaTelaPrincipal"
+        text="← Voltar"
+        style="-fx-background-color: #993366; -fx-text-fill: white;"
+        prefWidth="80.0"
+        prefHeight="30.0" />
+
       <TabPane tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
          <tabs>
             <Tab style="-fx-background-color: #f1889b;" text="Plantas Disponíveis">
