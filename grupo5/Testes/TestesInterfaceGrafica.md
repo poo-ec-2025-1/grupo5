@@ -144,11 +144,9 @@ Este documento descreve como foram realizados os testes para as interfaces gráf
 * Eventos `onAction` e `fx:id` foram verificados e estão corretamente conectados aos controladores.
 * Navegações e interações visuais foram testadas em execução.
 * Alguns botões e menus ainda precisam de ajustes para funcionamento futuro, como:
-
-  * O `MenuItem Sair` da tela `CadastroPlanta.fxml`, que ainda não possui ação definida.
   * A opção de "Novo Endereço" na tela `EnderecoDeEntrega.fxml`, que depende de lógica complementar.
   * O botão de **boleto bancário** na tela `FormaDePagamento.fxml`, que ainda não está implementado.
-* Esses ajustes pendentes **não comprometem o funcionamento geral do aplicativo** e podem ser implementados em versões futuras.
+  * Esses ajustes pendentes **não comprometem o funcionamento geral do aplicativo** e podem ser implementados em versões futuras.
 
 
 ---
