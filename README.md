@@ -1,6 +1,6 @@
 # Marketplace de Plantas
 
-## 📝 Objetivo do Projeto
+## Objetivo do Projeto
 Desenvolver um aplicativo JavaFX que simula um marketplace de compra e venda de plantas, inspirado em plataformas como Mercado Livre e OLX. O projeto permite o cadastro de plantas, a seleção de itens para o carrinho, escolha do método de pagamento e finalização da compra.
 
 ## Versão / Data
