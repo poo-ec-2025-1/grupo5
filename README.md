@@ -71,29 +71,35 @@ Execute a classe Main.java para iniciar o aplicativo.
 
 ### Tela de Login
 ![Tela de Login](images/login.png)
+---
 
 ### Tela Principal
 ![Tela Principal](images/tela-principal.png)
+---
 
 ### Cadastro de Plantas
 ![Cadastro de Plantas](images/cadastro-plantas.png)
+---
 
 ### Tela de Compra
 ![Tela de Compra](images/compra.png)
+---
 
 ### Endereço de Entrega
 ![Endereço de Entrega](images/endereco.png)
+---
 
 ### Tela de Forma de Pagamento
 ![Tela de Pagamento](images/formapagamentp.png)
+---
 
 ### Pagamento via Pix
 ![Pagamento Pix](images/pix.png)
+---
 
 ### Compra Finalizada
 ![Compra Finalizada](images/finalizada.png)
-
-
+---
 
 ## Estrutura de Pastas (resumida)
 
