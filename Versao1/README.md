@@ -39,7 +39,7 @@ Apesar dos erros, esta versão foi **importante como aprendizado**. Através del
 ## 🔁 O que mudou na versão final?
 
 Após abandonar essa versão, a equipe recomeçou o projeto com:
-- Estrutura mais limpa e organizada, com o padrão MVC;
+- **Estrutura mais limpa e organizada, com o padrão MVC**;
 - Implementação correta das **funcionalidades de cadastro, compra e carrinho**;
 - Integração com banco de dados funcional;
 - Interface conectada de forma fluida e funcional, respeitando o padrão JavaFX CRUD.
