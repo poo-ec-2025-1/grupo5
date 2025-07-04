@@ -2,7 +2,7 @@
 
 **Aluno:** Rodrigo Frota  
 **Curso:** Engenharia de Computação  
-**Disciplina:** Programação Orientada a Objetos / Projeto Integrador  
+**Disciplina:** Programação Orientada a Objetos  
 **Data:** Julho de 2025  
 
 ---
