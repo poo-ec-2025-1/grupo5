@@ -1,1 +1,29 @@
-Relatório Individual
+# Relatório Individual
+
+Este relatório tem como objetivo demonstrar as habilidades desenvolvidas ao longo da execução do projeto em grupo, por meio da aplicação prática de conceitos fundamentais de desenvolvimento de software. As competências avaliadas abrangem tanto aspectos técnicos quanto organizacionais, como o uso de ferramentas, domínio da linguagem Java, modelagem e documentação.
+
+## Contribuições Individuais
+
+Durante o desenvolvimento do projeto, atuei principalmente nas seguintes frentes:
+
+- **Documentação**: Fui responsável por elaborar e manter atualizada a documentação do projeto, utilizando arquivos em Markdown (.md) no repositório do grupo. Isso incluiu a descrição das telas, funcionalidades, fluxos do sistema e a organização das informações de forma clara e acessível.
+
+- **Testes de Código e Telas**: Realizei os testes das classes Java e das interfaces desenvolvidas no BlueJ, validando o funcionamento dos métodos, interações e lógica implementada. Identifiquei e relatei falhas, contribuindo para a estabilidade da aplicação.
+
+- **Interfaces Gráficas (FXML)**: Colaborei na criação e edição de arquivos FXML no Scene Builder, ajudando na construção das telas do aplicativo. Também participei da implementação de alguns controladores (controllers), conectando os elementos visuais à lógica do programa em Java.
+
+## Objetivos Desenvolvidos
+
+- **Domínio do Ambiente e Ferramentas**: Utilizei o GitHub para organização e versionamento do projeto; o BlueJ e o Visual Studio Code para codificação e testes; e o Scene Builder para desenvolvimento das interfaces.
+
+- **Domínio da Linguagem Java**: Compreendi e contribuí com a criação de métodos e estruturas coerentes com o modelo definido, aplicando os princípios de orientação a objetos durante os testes e ajustes no código.
+
+- **Domínio da Modelagem**: Apoiei a equipe na verificação da coerência entre a modelagem (diagramas UML) e a implementação prática, garantindo que os testes refletissem corretamente os comportamentos esperados.
+
+- **Domínio da Documentação**: Organizei e mantive a documentação do projeto em Markdown, detalhando os principais componentes e fluxos da aplicação.
+
+## Considerações Gerais
+
+Apesar das funções individuais terem sido definidas desde o início do projeto, como forma de organização e distribuição de responsabilidades, a execução das tarefas aconteceu de maneira colaborativa. Todos os membros do grupo contribuíram mutuamente nas diversas etapas do desenvolvimento, ajudando uns aos outros sempre que necessário.
+
+Essa troca constante de conhecimento e apoio foi essencial para a conclusão do projeto, permitindo que dificuldades fossem superadas de forma conjunta e que cada integrante ampliasse seu domínio sobre diferentes áreas do desenvolvimento, como documentação, codificação, testes e interface gráfica. O trabalho em equipe foi, sem dúvida, um dos principais fatores para o bom andamento do projeto.
