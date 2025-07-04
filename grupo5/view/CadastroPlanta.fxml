@@ -2,9 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -18,11 +15,7 @@
 
 <VBox prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #fbe293;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroPlantaController">
    <children>
-      <Button text="⟵ Voltar"
-              onAction="#voltarParaTelaPrincipal"
-              style="-fx-background-color: transparent; -fx-text-fill: #993366; -fx-font-size: 14px; -fx-font-weight: bold;"
-              VBox.vgrow="NEVER" />
-
+      <Button onAction="#voltarParaTelaPrincipal" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #993366; -fx-text-fill: white; -fx-font-size: 12;" text="⟵ Voltar" VBox.vgrow="NEVER" />
       <AnchorPane style="-fx-background-color: #fbe293;" VBox.vgrow="ALWAYS">
          <children>
             <TabPane style="-fx-background-color: #f1889b;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
